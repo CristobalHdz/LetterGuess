@@ -1,20 +1,20 @@
-var show = "";
+var visible = "";
 var rightGuess = "";
 
 class Letter {
     constructor(data) {
         this.letter = data;
-        this.guessed = false;
+        this.visible = false;
     };
 
-    show(displayment, rightAnswer) {
+    showLetter(displayment, rightAnswer) {
         rightAnswer === true ?
             show = displayment
             :
             show = "_"
     };
 
-    check(check, rightAnswer) {
+    guess(check, rightAnswer) {
         check === rightAnswer ?
             rightGuess = true
             :
